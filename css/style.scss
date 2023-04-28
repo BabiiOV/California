@@ -1,0 +1,68 @@
+@import "reset.css";
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap');
+@import "owl.carousel.css";
+@import "owl.theme.default.css";
+
+
+
+$main_font: 'Readex Pro', sans-serif;
+$sub_font: 'Inter', sans-serif;
+$main_color: #000000;
+$white_color: #FFFFFF;
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+
+.header{
+  background: $white_color;
+  padding: 28px 0;
+  .container{
+    max-width: 1294px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+      .logo__img{
+
+      }
+    }
+    .menu{
+
+      .menu__list{
+
+
+        .menu__list-item{
+
+          a{
+
+          }
+        }
+      }
+    }
+    .icons{
+
+      .icons__item{
+
+        .search{
+
+          img{
+
+          }
+        }
+        .basket{
+
+          img{
+
+          }
+        }
+      }
+    }
+  }
+}

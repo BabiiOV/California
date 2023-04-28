@@ -1,8 +1,7 @@
 @import url(reset.css);
 @import url(normalize.css);
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
-@import url(owl.carousel.css);
-@import url(owl.theme.default.css);
+
 .header {
   background: #FFFFFF;
   padding: 28px 0; }

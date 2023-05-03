@@ -61,7 +61,7 @@ body{
     z-index: 99;
     display: none;
     float: right;
-    margin-top: 5px;
+    margin-top: 15px;
     padding-left: 15px;
     transition : all 0.3s ease-out;
 }

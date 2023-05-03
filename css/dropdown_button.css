@@ -25,11 +25,9 @@
 .nav li .dropdown-menu {
     display: none;
     position: absolute;
-    left: -22px;
-    max-width: 95px;
+    left: 32px;
+    min-width: 0;
     padding: 0;
-    margin-top: 3px;
-    text-align: right;
     background-color: transparent;
     border: none;
 }

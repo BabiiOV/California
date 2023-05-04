@@ -288,8 +288,12 @@ header {
           right: -12px;
           top: 30%;
         }
+        @include max-screen(391px) {
+          right: -10px;
+        }
         @include max-screen(429px) {
           top: 34%;
+          right: -5px;
         }
 
         &:before {
@@ -333,11 +337,11 @@ header {
       justify-content: space-between;
       align-items: center;
       padding-left: 56px;
-      @include max-screen(321px) {
-        padding-left: 25px;
-      }
       @include max-screen(429px) {
         padding-left: 40px;
+      }
+      @include max-screen(321px) {
+        padding-left: 19px;
       }
 
       h1 {
@@ -391,7 +395,7 @@ header {
         text-transform: capitalize;
         color: $main_color;
         padding: 14px 53px;
-        border: 1px solid #000000;
+        border: 1px solid $main_color;
         border-radius: 200px;
         display: inline-block;
         @include max-screen(429px) {
@@ -408,7 +412,6 @@ header {
         background-color: transparent;
         @include max-screen(429px) {
           width: 50%;
-          height: 120%;
         }
         @include max-screen(321px) {
           width: 52%;
@@ -435,6 +438,9 @@ header {
       font-size: 42px;
       line-height: 52px;
       color: $main_color;
+      @include max-screen(429px){
+        width: 85%;
+      }
     }
 
     p {
@@ -448,7 +454,7 @@ header {
       max-width: 628px;
       margin: auto;
       margin-bottom: 55px;
-      @include max-screen(376px){
+      @include max-screen(429px){
         width: 85%;
       }
     }
@@ -697,10 +703,58 @@ header {
     .cards {
       display: flex;
       flex-wrap: wrap;
+      .owl-nav {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 28px;
+        .owl-prev {
+          position: absolute;
+          top: 47%;
+          left: 0;
+          width: 50px;
+          height: 50px;
+          @include max-screen(429px){
+            top: 38%
+          }
+          @include max-screen(429px){
+            top: 33%;
+          }
+          @include max-screen(321px){
+            top: 44%
+          }
+          &:before {
+            content: "\f060";
+            color: $main_color;
+          }
+        }
+
+        .owl-next {
+          position: absolute;
+          right: 0;
+          top: 47%;
+          width: 50px;
+          height: 50px;
+          @include max-screen(429px){
+            top: 33%
+          }
+          @include max-screen(321px){
+            top: 44%
+          }
+          &:before {
+            color: $main_color;
+            content: "\f061";
+          }
+        }
+      }
+
       .macbook{
         p{
           margin-bottom: 45px;
+          @include max-screen(391px){
+            margin-bottom: 63px;
+          }
         }
+
       }
       img {
         margin-bottom: 37px;
@@ -717,6 +771,12 @@ header {
         line-height: 28px;
         color: $main_color;
         margin-bottom: 9px;
+        @include max-screen(769px){
+          font-size: 18px;
+        }
+        @include max-screen(429px){
+          font-size: 14px;
+        }
       }
 
       p {
@@ -730,6 +790,9 @@ header {
         text-align: left;
         @include max-screen(429px){
           max-width: 320px;
+        }
+        @include max-screen(321px){
+          display: none;
         }
       }
       a{

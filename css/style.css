@@ -24,7 +24,7 @@ header {
       margin-bottom: 0; } }
   @media screen and (max-width: 429px) {
     header {
-      position: fixed;
+      position: fixed !important;
       padding: 6px 0;
       margin-bottom: 0; } }
   header .container {
@@ -175,6 +175,9 @@ header {
 /*new_phones*/
 .new_phones {
   margin-bottom: 75px; }
+  @media screen and (max-width: 429px) {
+    .new_phones {
+      margin-top: 60px; } }
   .new_phones .container {
     position: relative;
     max-width: 1294px;
@@ -328,6 +331,7 @@ header {
     max-width: 1294px;
     margin: auto; }
     .latest_offers .container h2 {
+      margin: auto;
       margin-bottom: 9px;
       text-align: center;
       font-family: "Readex Pro", sans-serif;
@@ -347,6 +351,9 @@ header {
       max-width: 628px;
       margin: auto;
       margin-bottom: 55px; }
+      @media screen and (max-width: 376px) {
+        .latest_offers .container p {
+          width: 85%; } }
     .latest_offers .container .sub_container {
       display: flex; }
       @media screen and (max-width: 835px) {
@@ -356,7 +363,11 @@ header {
         margin-right: 16px; }
         @media screen and (max-width: 835px) {
           .latest_offers .container .sub_container .lap_watch {
-            margin-bottom: 30px; } }
+            margin-bottom: 30px;
+            padding-left: 35px; } }
+        @media screen and (max-width: 429px) {
+          .latest_offers .container .sub_container .lap_watch {
+            padding-left: 18px; } }
         .latest_offers .container .sub_container .lap_watch .laptops {
           width: 100%;
           display: flex;
@@ -441,7 +452,13 @@ header {
       display: flex; }
       @media screen and (max-width: 835px) {
         .latest_offers .container .ph_tablet {
-          justify-content: space-around; } }
+          justify-content: space-around;
+          padding-left: 14px; } }
+      @media screen and (max-width: 429px) {
+        .latest_offers .container .ph_tablet {
+          justify-content: center;
+          margin-left: 5px;
+          margin-right: 15px; } }
       .latest_offers .container .ph_tablet .phones {
         padding: 144px 0 144px 16px;
         margin-right: 16px;
@@ -525,41 +542,18 @@ header {
       font-size: 13px;
       line-height: 17px;
       text-align: center;
-      color: #000000;
-      margin-bottom: 59px; }
+      color: #000000; }
     .most_selled .container .cards {
       display: flex;
       flex-wrap: wrap; }
-      .most_selled .container .cards .macbook img {
-        margin-bottom: 37px; }
-      .most_selled .container .cards .macbook h4 {
-        font-family: "Readex Pro", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 28px;
-        color: #000000;
-        margin-bottom: 9px; }
       .most_selled .container .cards .macbook p {
-        font-family: "Inter", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #4B4B4B;
-        margin-bottom: 45px;
-        text-align: left; }
-        .most_selled .container .cards .macbook p:last-of-type {
-          font-size: 18px;
-          line-height: 22px;
-          color: #000000;
-          margin-bottom: 0; }
-      .most_selled .container .cards .watch_3 img {
+        margin-bottom: 45px; }
+      .most_selled .container .cards img {
         margin-bottom: 37px; }
-        @media screen and (max-width: 429px) {
-          .most_selled .container .cards .watch_3 img {
+        @media screen and (max-width: 835px) {
+          .most_selled .container .cards img {
             margin-top: 15px; } }
-      .most_selled .container .cards .watch_3 h4 {
+      .most_selled .container .cards h4 {
         font-family: "Readex Pro", sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -567,7 +561,7 @@ header {
         line-height: 28px;
         color: #000000;
         margin-bottom: 9px; }
-      .most_selled .container .cards .watch_3 p {
+      .most_selled .container .cards p {
         font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -576,62 +570,17 @@ header {
         color: #4B4B4B;
         margin-bottom: 28px;
         text-align: left; }
-        .most_selled .container .cards .watch_3 p:last-of-type {
-          font-size: 18px;
-          line-height: 22px;
-          color: #000000;
-          margin-bottom: 0; }
-      .most_selled .container .cards .macbook_air img {
-        margin-bottom: 37px; }
-      .most_selled .container .cards .macbook_air h4 {
-        font-family: "Readex Pro", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 28px;
-        color: #000000;
-        margin-bottom: 9px; }
-      .most_selled .container .cards .macbook_air p {
-        font-family: "Inter", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #4B4B4B;
-        margin-bottom: 28px;
-        text-align: left; }
-        .most_selled .container .cards .macbook_air p:last-of-type {
-          font-size: 18px;
-          line-height: 22px;
-          color: #000000;
-          margin-bottom: 0; }
-      .most_selled .container .cards .ipad img {
-        margin-bottom: 37px; }
         @media screen and (max-width: 429px) {
-          .most_selled .container .cards .ipad img {
-            margin-top: 15px; } }
-      .most_selled .container .cards .ipad h4 {
-        font-family: "Readex Pro", sans-serif;
+          .most_selled .container .cards p {
+            max-width: 320px; } }
+      .most_selled .container .cards a {
+        font-family: 'Inter';
         font-style: normal;
         font-weight: 400;
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 22px;
         color: #000000;
-        margin-bottom: 9px; }
-      .most_selled .container .cards .ipad p {
-        font-family: "Inter", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #4B4B4B;
-        margin-bottom: 28px;
-        text-align: left; }
-        .most_selled .container .cards .ipad p:last-of-type {
-          font-size: 18px;
-          line-height: 22px;
-          color: #000000;
-          margin-bottom: 0; }
+        display: inline-block; }
 
 /*best_around*/
 .best_around {
@@ -659,6 +608,13 @@ header {
     .best_around .container .cards {
       display: flex;
       flex-wrap: wrap; }
+      @media screen and (max-width: 835px) {
+        .best_around .container .cards {
+          padding-left: 25px; } }
+      @media screen and (max-width: 391px) {
+        .best_around .container .cards {
+          padding-right: 0;
+          padding-left: 0; } }
       .best_around .container .cards article {
         display: block;
         background: #F8F9FA;
@@ -666,6 +622,12 @@ header {
         margin-right: 28px;
         padding-top: 41px;
         text-align: center; }
+        @media screen and (max-width: 361px) {
+          .best_around .container .cards article {
+            width: 100%; } }
+        @media screen and (max-width: 321px) {
+          .best_around .container .cards article {
+            width: 100%; } }
         @media screen and (max-width: 835px) {
           .best_around .container .cards article:last-of-type {
             margin-top: 15px; } }
@@ -676,7 +638,8 @@ header {
           font-size: 13px;
           line-height: 17px;
           text-align: center;
-          color: #000000; }
+          color: #000000;
+          margin-bottom: 0; }
         .best_around .container .cards article h5 {
           font-family: "Readex Pro", sans-serif;
           font-style: normal;
@@ -701,6 +664,9 @@ header {
           margin-bottom: 30px;
           display: inline-block; }
         @media screen and (max-width: 321px) {
+          .best_around .container .cards article img {
+            width: 100%; } }
+        @media screen and (max-width: 361px) {
           .best_around .container .cards article img {
             width: 100%; } }
 
@@ -806,64 +772,130 @@ header {
           display: inline-block; }
 
 /*sign_up*/
-.sign_up .container .sub_container {
-  background: #DCE5E2;
-  border-radius: 16px;
-  margin: auto;
-  text-align: center; }
-  .sign_up .container .sub_container h3 {
-    font-family: "Readex Pro", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 52px;
-    text-align: center;
-    color: #000000; }
-  .sign_up .container .sub_container p {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #000000; }
-  .sign_up .container .sub_container img {
-    margin-bottom: 14px; }
-  .sign_up .container .sub_container form {
-    display: flex;
-    justify-content: center; }
-    @media screen and (max-width: 429px) {
-      .sign_up .container .sub_container form {
-        display: block; } }
-    .sign_up .container .sub_container form input {
-      background: #DCE5E2;
-      border: 1px solid #000000;
-      border-radius: 54px 0px 0px 54px;
-      padding-left: 32px;
-      padding-bottom: 16px;
-      padding-top: 16px;
-      height: 50px;
-      width: 285px; }
-      @media screen and (max-width: 429px) {
-        .sign_up .container .sub_container form input {
-          border-radius: 54px;
-          width: 100%; } }
-    .sign_up .container .sub_container form button {
-      background: #000000;
-      border-radius: 0px 200px 200px 0px;
+.sign_up {
+  margin-bottom: 19px; }
+  .sign_up .container .sub_container {
+    background: #DCE5E2;
+    border-radius: 16px;
+    margin: auto;
+    text-align: center; }
+    .sign_up .container .sub_container h3 {
+      font-family: "Readex Pro", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      text-align: center;
+      color: #000000; }
+    .sign_up .container .sub_container p {
       font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
-      line-height: 17px;
+      font-size: 16px;
+      line-height: 19px;
       text-align: center;
-      color: #FFFFFF;
-      padding: 16px 33px;
-      border-color: #000000;
-      height: 50px; }
+      color: #000000; }
+    .sign_up .container .sub_container img {
+      margin-bottom: 14px; }
+    .sign_up .container .sub_container form {
+      display: flex;
+      justify-content: center; }
       @media screen and (max-width: 429px) {
-        .sign_up .container .sub_container form button {
-          border-radius: 54px;
-          width: 50%; } }
+        .sign_up .container .sub_container form {
+          display: block; } }
+      .sign_up .container .sub_container form input {
+        background: #DCE5E2;
+        border: 1px solid #000000;
+        border-radius: 54px 0px 0px 54px;
+        padding-left: 32px;
+        padding-bottom: 16px;
+        padding-top: 16px;
+        height: 50px;
+        width: 285px; }
+        @media screen and (max-width: 429px) {
+          .sign_up .container .sub_container form input {
+            border-radius: 54px;
+            width: 100%; } }
+      .sign_up .container .sub_container form button {
+        background: #000000;
+        border-radius: 0px 200px 200px 0px;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 16px 33px;
+        border-color: #000000;
+        height: 50px; }
+        @media screen and (max-width: 429px) {
+          .sign_up .container .sub_container form button {
+            border-radius: 54px;
+            width: 50%; } }
+
+/*footer*/
+footer {
+  background: #F8F9FA;
+  border-top: solid 1px #DCE5E2; }
+  @media screen and (max-width: 835px) {
+    footer .container {
+      padding-left: 15px; } }
+  footer .container .sub_container {
+    border-bottom: solid 1px #DCE5E2; }
+    @media screen and (max-width: 835px) {
+      footer .container .sub_container .info_logo {
+        display: none; } }
+    footer .container .sub_container .info_logo img {
+      margin-bottom: 18px; }
+    footer .container .sub_container .info_logo p {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000; }
+    footer .container .sub_container ul li {
+      margin-bottom: 14px; }
+      footer .container .sub_container ul li:first-of-type {
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+        color: #000000;
+        margin-bottom: 19px; }
+      footer .container .sub_container ul li a {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: #000000; }
+  footer .container .links {
+    justify-content: space-between; }
+    @media screen and (max-width: 429px) {
+      footer .container .links {
+        display: none; } }
+    footer .container .links .webflow {
+      text-align: right; }
+    footer .container .links span {
+      font-family: 'Readex Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000; }
+    footer .container .links a {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #000000; }
+      footer .container .links a:after {
+        content: url("../images/arrow.svg");
+        position: relative;
+        top: 10px; }
 
 /*# sourceMappingURL=style.css.map */

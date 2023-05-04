@@ -38,7 +38,7 @@ header {
     margin-bottom: 0;
   }
   @include max-screen(429px) {
-    position: fixed;
+    position: fixed!important;
     padding: 6px 0;
     margin-bottom: 0;
   }
@@ -236,6 +236,9 @@ header {
 
 .new_phones {
   margin-bottom: 75px;
+  @include max-screen(429px){
+    margin-top: 60px;
+  }
   .container {
     position: relative;
     max-width: 1294px;
@@ -423,6 +426,7 @@ header {
     max-width: 1294px;
     margin: auto;
     h2 {
+      margin: auto;
       margin-bottom: 9px;
       text-align: center;
       font-family: $main_font;
@@ -444,6 +448,9 @@ header {
       max-width: 628px;
       margin: auto;
       margin-bottom: 55px;
+      @include max-screen(376px){
+        width: 85%;
+      }
     }
 
     .sub_container {
@@ -456,6 +463,10 @@ header {
         margin-right: 16px;
         @include max-screen(835px) {
           margin-bottom: 30px;
+          padding-left: 35px;
+        }
+        @include max-screen(429px){
+          padding-left: 18px;
         }
 
         .laptops {
@@ -561,6 +572,12 @@ header {
       display: flex;
       @include max-screen(835px) {
         justify-content: space-around;
+        padding-left: 14px;
+      }
+      @include max-screen(429px){
+        justify-content: center;
+        margin-left: 5px;
+        margin-right: 15px;
       }
 
       .phones {
@@ -650,160 +667,81 @@ header {
 
 /*most_selled*/
 
-.most_selled{
+.most_selled {
   margin-bottom: 78px;
-  .container{
+
+  .container {
     margin: auto;
-      h3 {
+
+    h3 {
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 37px;
+      line-height: 52px;
+      text-align: center;
+      color: $main_color;
+      margin-bottom: 9px;
+    }
+
+    p {
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      text-align: center;
+      color: $main_color;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      .macbook{
+        p{
+          margin-bottom: 45px;
+        }
+      }
+      img {
+        margin-bottom: 37px;
+        @include max-screen(835px) {
+          margin-top: 15px;
+        }
+      }
+
+      h4 {
         font-family: $main_font;
         font-style: normal;
         font-weight: 400;
-        font-size: 37px;
-        line-height: 52px;
-        text-align: center;
+        font-size: 22px;
+        line-height: 28px;
         color: $main_color;
         margin-bottom: 9px;
       }
-      p{
-        font-family: $main_font;
+
+      p {
+        font-family: $sub_font;
         font-style: normal;
         font-weight: 400;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 17px;
-        text-align: center;
-        color: $main_color;
-        margin-bottom: 59px;
-      }
-      .cards{
-        display: flex;
-        flex-wrap: wrap;
-        .macbook{
-          img{
-            margin-bottom: 37px;
-          }
-          h4{
-            font-family: $main_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 28px;
-            color: $main_color;
-            margin-bottom: 9px;
-          }
-          p{
-            font-family: $sub_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
-            color: #4B4B4B;
-            margin-bottom: 45px;
-            text-align: left;
-            &:last-of-type{
-              font-size: 18px;
-              line-height: 22px;
-              color: $main_color;
-              margin-bottom: 0;
-            }
-          }
-        }
-        .watch_3{
-          img{
-            margin-bottom: 37px;
-            @include max-screen(429px){
-              margin-top: 15px;
-            }
-          }
-          h4{
-            font-family: $main_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 28px;
-            color: $main_color;
-            margin-bottom: 9px;
-          }
-          p{
-            font-family: $sub_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
-            color: #4B4B4B;
-            margin-bottom: 28px;
-            text-align: left;
-            &:last-of-type{
-              font-size: 18px;
-              line-height: 22px;
-              color: $main_color;
-              margin-bottom: 0;
-            }
-          }
-        }
-        .macbook_air{
-          img{
-            margin-bottom: 37px;
-          }
-          h4{
-            font-family: $main_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 28px;
-            color: $main_color;
-            margin-bottom: 9px;
-          }
-          p{
-            font-family: $sub_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
-            color: #4B4B4B;
-            margin-bottom: 28px;
-            text-align: left;
-            &:last-of-type{
-              font-size: 18px;
-              line-height: 22px;
-              color: $main_color;
-              margin-bottom: 0;
-            }
-          }
-        }
-        .ipad{
-          img{
-            margin-bottom: 37px;
-            @include max-screen(429px){
-              margin-top: 15px;
-            }
-          }
-          h4{
-            font-family: $main_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 28px;
-            color: $main_color;
-            margin-bottom: 9px;
-          }
-          p{
-            font-family: $sub_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
-            color: #4B4B4B;
-            margin-bottom: 28px;
-            text-align: left;
-            &:last-of-type{
-              font-size: 18px;
-              line-height: 22px;
-              color: $main_color;
-              margin-bottom: 0;
-            }
-          }
+        color: #4B4B4B;
+        margin-bottom: 28px;
+        text-align: left;
+        @include max-screen(429px){
+          max-width: 320px;
         }
       }
+      a{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        display: inline-block;
+      }
+    }
   }
 }
 
@@ -836,6 +774,13 @@ header {
     .cards{
       display: flex;
       flex-wrap: wrap;
+      @include max-screen(835px){
+        padding-left: 25px;
+      }
+      @include max-screen(391px){
+        padding-right: 0;
+        padding-left: 0;
+      }
       article{
         display: block;
         background: #F8F9FA;
@@ -843,6 +788,12 @@ header {
         margin-right: 28px;
         padding-top: 41px;
         text-align: center;
+        @include max-screen(361px){
+          width: 100%;
+        }
+        @include max-screen(321px){
+          width: 100%;
+        }
         &:last-of-type{
           @include max-screen(835px){
             margin-top: 15px;
@@ -856,6 +807,7 @@ header {
           line-height: 17px;
           text-align: center;
           color: $main_color;
+          margin-bottom: 0;
         }
         h5{
           font-family: $main_font;
@@ -884,6 +836,9 @@ header {
         }
         img{
           @include max-screen(321px){
+            width: 100%;
+          }
+          @include max-screen(361px){
             width: 100%;
           }
         }
@@ -1023,6 +978,7 @@ header {
 /*sign_up*/
 
 .sign_up{
+  margin-bottom: 19px;
   .container{
    .sub_container{
      background: #DCE5E2;
@@ -1090,6 +1046,91 @@ header {
        }
      }
    }
+  }
+}
+
+
+/*footer*/
+
+
+footer{
+  background: #F8F9FA;
+  border-top: solid 1px #DCE5E2;
+  .container{
+    @include max-screen(835px){
+      padding-left: 15px;
+    }
+    .sub_container{
+      border-bottom: solid 1px #DCE5E2;
+      .info_logo{
+        @include max-screen(835px){
+          display: none;
+        }
+        img{
+          margin-bottom: 18px;
+        }
+        p{
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #000000;
+        }
+      }
+      ul{
+        li{
+          margin-bottom: 14px;
+          &:first-of-type{
+          font-family: 'Readex Pro';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 28px;
+          color: #000000;
+          margin-bottom: 19px;
+          }
+          a{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            color: #000000;
+          }
+        }
+      }
+    }
+    .links{
+      justify-content: space-between;
+      @include max-screen(429px){
+        display: none;
+      }
+      .webflow{
+        text-align: right;
+      }
+      span{
+        font-family: 'Readex Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+      }
+      a{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+        &:after{
+          content: url("../images/arrow.svg");
+          position: relative;
+          top: 10px;
+        }
+      }
+    }
   }
 }
 

@@ -201,13 +201,13 @@ header {
         left: 0;
         width: 50px;
         height: 50px; }
+        @media screen and (max-width: 429px) {
+          .new_phones .container .owl-nav .owl-prev {
+            top: 34%; } }
         @media screen and (max-width: 321px) {
           .new_phones .container .owl-nav .owl-prev {
             left: -12px;
             top: 30%; } }
-        @media screen and (max-width: 429px) {
-          .new_phones .container .owl-nav .owl-prev {
-            top: 34%; } }
         .new_phones .container .owl-nav .owl-prev:before {
           content: "\f053";
           color: #000000; }
@@ -217,17 +217,17 @@ header {
         top: 44%;
         width: 50px;
         height: 50px; }
-        @media screen and (max-width: 321px) {
-          .new_phones .container .owl-nav .owl-next {
-            right: -12px;
-            top: 30%; } }
-        @media screen and (max-width: 391px) {
-          .new_phones .container .owl-nav .owl-next {
-            right: -10px; } }
         @media screen and (max-width: 429px) {
           .new_phones .container .owl-nav .owl-next {
             top: 34%;
             right: -5px; } }
+        @media screen and (max-width: 391px) {
+          .new_phones .container .owl-nav .owl-next {
+            right: -10px; } }
+        @media screen and (max-width: 321px) {
+          .new_phones .container .owl-nav .owl-next {
+            right: -12px;
+            top: 30%; } }
         .new_phones .container .owl-nav .owl-next:before {
           color: #000000;
           content: "\f054"; }
@@ -564,9 +564,6 @@ header {
           height: 50px; }
           @media screen and (max-width: 429px) {
             .most_selled .container .cards .owl-nav .owl-prev {
-              top: 38%; } }
-          @media screen and (max-width: 429px) {
-            .most_selled .container .cards .owl-nav .owl-prev {
               top: 33%; } }
           @media screen and (max-width: 321px) {
             .most_selled .container .cards .owl-nav .owl-prev {
@@ -629,7 +626,7 @@ header {
           .most_selled .container .cards p {
             display: none; } }
       .most_selled .container .cards a {
-        font-family: 'Inter';
+        font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -718,10 +715,10 @@ header {
           padding: 14px 63px;
           margin-bottom: 30px;
           display: inline-block; }
-        @media screen and (max-width: 321px) {
+        @media screen and (max-width: 361px) {
           .best_around .container .cards article img {
             width: 100%; } }
-        @media screen and (max-width: 361px) {
+        @media screen and (max-width: 321px) {
           .best_around .container .cards article img {
             width: 100%; } }
 
@@ -904,7 +901,7 @@ footer {
     footer .container .sub_container .info_logo img {
       margin-bottom: 18px; }
     footer .container .sub_container .info_logo p {
-      font-family: 'Inter';
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
@@ -913,7 +910,7 @@ footer {
     footer .container .sub_container ul li {
       margin-bottom: 14px; }
       footer .container .sub_container ul li:first-of-type {
-        font-family: 'Readex Pro';
+        font-family: "Readex Pro", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 22px;
@@ -921,7 +918,7 @@ footer {
         color: #000000;
         margin-bottom: 19px; }
       footer .container .sub_container ul li a {
-        font-family: 'Inter';
+        font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 17px;
@@ -935,14 +932,14 @@ footer {
     footer .container .links .webflow {
       text-align: right; }
     footer .container .links span {
-      font-family: 'Readex Pro';
+      font-family: "Readex Pro", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
       color: #000000; }
     footer .container .links a {
-      font-family: 'Inter';
+      font-family: "Inter", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 18px;

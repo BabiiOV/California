@@ -264,12 +264,12 @@ header {
         left: 0;
         width: 50px;
         height: 50px;
+        @include max-screen(429px) {
+          top: 34%;
+        }
         @include max-screen(321px) {
           left: -12px;
           top: 30%;
-        }
-        @include max-screen(429px) {
-          top: 34%;
         }
 
         &:before {
@@ -284,16 +284,17 @@ header {
         top: 44%;
         width: 50px;
         height: 50px;
-        @include max-screen(321px) {
-          right: -12px;
-          top: 30%;
+
+        @include max-screen(429px) {
+          top: 34%;
+          right: -5px;
         }
         @include max-screen(391px) {
           right: -10px;
         }
-        @include max-screen(429px) {
-          top: 34%;
-          right: -5px;
+        @include max-screen(321px) {
+          right: -12px;
+          top: 30%;
         }
 
         &:before {
@@ -714,9 +715,6 @@ header {
           width: 50px;
           height: 50px;
           @include max-screen(429px){
-            top: 38%
-          }
-          @include max-screen(429px){
             top: 33%;
           }
           @include max-screen(321px){
@@ -796,12 +794,12 @@ header {
         }
       }
       a{
-        font-family: 'Inter';
+        font-family: $sub_font;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
-        color: #000000;
+        color: $main_color;
         display: inline-block;
       }
     }
@@ -898,12 +896,13 @@ header {
           display: inline-block;
         }
         img{
-          @include max-screen(321px){
-            width: 100%;
-          }
           @include max-screen(361px){
             width: 100%;
           }
+          @include max-screen(321px){
+            width: 100%;
+          }
+
         }
       }
     }
@@ -1133,33 +1132,33 @@ footer{
           margin-bottom: 18px;
         }
         p{
-          font-family: 'Inter';
+          font-family: $sub_font;
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 19px;
-          color: #000000;
+          color: $main_color;
         }
       }
       ul{
         li{
           margin-bottom: 14px;
           &:first-of-type{
-          font-family: 'Readex Pro';
+          font-family: $main_font;
           font-style: normal;
           font-weight: 400;
           font-size: 22px;
           line-height: 28px;
-          color: #000000;
+          color: $main_color;
           margin-bottom: 19px;
           }
           a{
-            font-family: 'Inter';
+            font-family: $sub_font;
             font-style: normal;
             font-weight: 400;
             font-size: 17px;
             line-height: 22px;
-            color: #000000;
+            color: $main_color;
           }
         }
       }
@@ -1173,20 +1172,20 @@ footer{
         text-align: right;
       }
       span{
-        font-family: 'Readex Pro';
+        font-family: $main_font;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
-        color: #000000;
+        color: $main_color;
       }
       a{
-        font-family: 'Inter';
+        font-family: $sub_font;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
-        color: #000000;
+        color: $main_color;
         &:after{
           content: url("../images/arrow.svg");
           position: relative;

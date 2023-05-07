@@ -34,7 +34,7 @@ $white_color: #FFFFFF;
 header {
   padding: 28px 0;
   margin-bottom: 28px;
-  @include max-screen(835px) {
+  @include max-screen(916px) {
     margin-bottom: 0;
   }
   @include max-screen(429px) {
@@ -50,7 +50,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    @include max-screen(835px) {
+    @include max-screen(916px) {
       padding: 0 15px;
       width: 100%;
     }
@@ -216,6 +216,10 @@ header {
         &:last-of-type {
           margin-right: 30px;
         }
+        &:hover{
+          transform: scale(1.3);
+          transition: 0.3s;
+        }
       }
 
       a {
@@ -246,7 +250,7 @@ header {
     background: #DCE5E2;
     border-radius: 32px;
     padding: 0;
-    @include max-screen(835px) {
+    @include max-screen(916px) {
       border-radius: 0;
     }
 
@@ -254,8 +258,8 @@ header {
       font-family: "Font Awesome 6 Free";
       font-weight: 900;
       font-size: 28px;
-      @include max-screen(321px) {
-        font-size: 20px;
+      @include max-screen(429px) {
+        display: none;
       }
 
       .owl-prev {
@@ -264,13 +268,7 @@ header {
         left: 0;
         width: 50px;
         height: 50px;
-        @include max-screen(429px) {
-          top: 34%;
-        }
-        @include max-screen(321px) {
-          left: -12px;
-          top: 30%;
-        }
+
 
         &:before {
           content: "\f053";
@@ -285,18 +283,6 @@ header {
         width: 50px;
         height: 50px;
 
-        @include max-screen(429px) {
-          top: 34%;
-          right: -5px;
-        }
-        @include max-screen(391px) {
-          right: -10px;
-        }
-        @include max-screen(321px) {
-          right: -12px;
-          top: 30%;
-        }
-
         &:before {
           color: $main_color;
           content: "\f054";
@@ -308,11 +294,17 @@ header {
       position: absolute;
       left: 322px;
       bottom: 34px;
+      @include max-screen(429px){
+        display: flex;
+        position: absolute;
+        left: 24%;
+        bottom: -25px;
+      }
+      @include max-screen(321px){
+        left: 16%;
+      }
 
       .owl-dot {
-        @include max-screen(429px) {
-          display: none;
-        }
 
         span {
           background: $main_color !important;
@@ -320,7 +312,7 @@ header {
           width: 194px;
           height: 2px;
           display: inline-block;
-          @include max-screen(835px) {
+          @include max-screen(916px) {
             width: 50px;
           }
         }
@@ -328,7 +320,7 @@ header {
 
       .owl-dot.active {
         span {
-          border: solid 2px white;
+          border: solid 2px #DCE5E2;
         }
       }
     }
@@ -339,11 +331,9 @@ header {
       align-items: center;
       padding-left: 56px;
       @include max-screen(429px) {
-        padding-left: 40px;
+        padding-left: 20px;
       }
-      @include max-screen(321px) {
-        padding-left: 19px;
-      }
+
 
       h1 {
         font-family: $main_font;
@@ -355,7 +345,31 @@ header {
         max-width: 588px;
         margin-bottom: 19px;
         margin-right: 3px;
-        @include max-screen(835px) {
+        @include max-screen(916px) {
+          font-size: 38px;
+          line-height: 40px;
+        }
+        @include max-screen(429px) {
+          font-size: 28px;
+          line-height: 30px;
+          margin-bottom: 5px;
+        }
+        @include max-screen(321px) {
+          font-size: 24px;
+          line-height: 30px;
+        }
+      }
+      h3{
+        font-family: $main_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 70px;
+        color: $main_color;
+        max-width: 588px;
+        margin-bottom: 19px;
+        margin-right: 3px;
+        @include max-screen(916px) {
           font-size: 38px;
           line-height: 40px;
         }
@@ -412,10 +426,15 @@ header {
         height: 100%;
         background-color: transparent;
         @include max-screen(429px) {
-          width: 50%;
+          width: 68%;
+        }
+        @include max-screen(361px){
+          width: 63%;
+          height: 32vh;
         }
         @include max-screen(321px) {
-          width: 52%;
+          width: 60%;
+          height: 37vh;
         }
       }
     }
@@ -462,13 +481,13 @@ header {
 
     .sub_container {
       display: flex;
-      @include max-screen(835px) {
+      @include max-screen(916px) {
         display: block;
       }
 
       .lap_watch {
         margin-right: 16px;
-        @include max-screen(835px) {
+        @include max-screen(916px) {
           margin-bottom: 30px;
           padding-left: 35px;
         }
@@ -486,7 +505,7 @@ header {
           padding-right: 42px;
           margin-bottom: 72px;
           box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-          @include max-screen(835px) {
+          @include max-screen(916px) {
             margin-bottom: 30px;
           }
           @include max-screen(429px){
@@ -577,7 +596,7 @@ header {
     .ph_tablet {
       margin-bottom: 22px;
       display: flex;
-      @include max-screen(835px) {
+      @include max-screen(916px) {
         justify-content: space-around;
         padding-left: 14px;
       }
@@ -708,18 +727,15 @@ header {
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
         font-size: 28px;
+        @include max-screen(429px){
+          display: none;
+        }
         .owl-prev {
           position: absolute;
           top: 47%;
           left: 0;
           width: 50px;
           height: 50px;
-          @include max-screen(429px){
-            top: 33%;
-          }
-          @include max-screen(321px){
-            top: 44%
-          }
           &:before {
             content: "\f060";
             color: $main_color;
@@ -732,15 +748,41 @@ header {
           top: 47%;
           width: 50px;
           height: 50px;
-          @include max-screen(429px){
-            top: 33%
-          }
-          @include max-screen(321px){
-            top: 44%
-          }
           &:before {
             color: $main_color;
             content: "\f061";
+          }
+        }
+      }
+      .owl-dots {
+        @include max-screen(429px){
+          display: flex;
+          position: absolute;
+          left: 24%;
+          bottom: -20px;
+        }
+        @include max-screen(321px){
+          left: 16%;
+        }
+
+        .owl-dot {
+
+          span {
+            @include max-screen(429px) {
+              background: $main_color !important;
+              margin-right: 34px;
+              width: 30px;
+              height: 2px;
+              display: inline-block;
+            }
+          }
+        }
+
+        .owl-dot.active {
+          span {
+            @include max-screen(429px) {
+              border: solid 2px #DCE5E2;
+            }
           }
         }
       }
@@ -756,7 +798,7 @@ header {
       }
       img {
         margin-bottom: 37px;
-        @include max-screen(835px) {
+        @include max-screen(916px) {
           margin-top: 15px;
         }
       }
@@ -835,7 +877,7 @@ header {
     .cards{
       display: flex;
       flex-wrap: wrap;
-      @include max-screen(835px){
+      @include max-screen(916px){
         padding-left: 25px;
       }
       @include max-screen(391px){
@@ -856,7 +898,7 @@ header {
           width: 100%;
         }
         &:last-of-type{
-          @include max-screen(835px){
+          @include max-screen(916px){
             margin-top: 15px;
           }
         }
@@ -939,7 +981,7 @@ header {
     }
     .sub_container{
       margin-bottom: 73px;
-      @include max-screen(835px){
+      @include max-screen(916px){
         margin-bottom: 15px;
       }
       img{
@@ -1119,13 +1161,13 @@ footer{
   background: #F8F9FA;
   border-top: solid 1px #DCE5E2;
   .container{
-    @include max-screen(835px){
+    @include max-screen(916px){
       padding-left: 15px;
     }
     .sub_container{
       border-bottom: solid 1px #DCE5E2;
       .info_logo{
-        @include max-screen(835px){
+        @include max-screen(916px){
           display: none;
         }
         img{
